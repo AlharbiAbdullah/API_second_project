@@ -16,4 +16,12 @@ class ShowBlog(Blog):
 class User(BaseModel):
     name: str 
     email: str 
-    password: str 
+    password: str
+
+# What data to show to the end user 
+class ShowUser(BaseModel):
+    name: str 
+    email: str
+    class Config():
+        orm_mode = True
+
