@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session 
-from .. import models , schemas, hashing
+from blogs import models , schemas, hashing
 from fastapi import HTTPException
 
 # Get user by ID 
