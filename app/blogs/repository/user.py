@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session 
 from blogs import models , schemas, hashing
-from fastapi import HTTPException
+from fastapi import HTTPException, status
 
 # Get user by ID 
 def get_user_by_id(id: int , db: Session):
