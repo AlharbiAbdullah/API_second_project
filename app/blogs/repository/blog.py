@@ -40,7 +40,7 @@ def deletion(id: int , db: Session):
     }
 
 # Update function 
-def update(id: int, db: Session):
+def update(id: int,request: schemas.Blog,  db: Session):
     blog = db.query(models.Blog).filter(models.Blog.id == id)
     if not blog.first():
         raise HTTPException(status_code= status.HTTP_404_NOT_FOUND,
